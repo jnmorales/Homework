@@ -17,11 +17,6 @@ html {
   line-height: 1.4;
 }
 
-.container{
-    display: flex;
-    flex: 1;
-}
-
 .header {
     text-align: center;
 }
@@ -44,18 +39,16 @@ html {
     padding: 0 20px;
     display: inline-block;
 }
-      
+
 iframe {
     position: relative;
-    display: flex;
+    z-index: -1;
     width: 100vw;
     height: 100vh;
   }
 
 .content {
     position: relative;
-    display: flex;
-    flex-direction: column;
     text-align: center;
     background: rgba(0, 0, 0, 0.5);
     color: #754948;
@@ -101,10 +94,21 @@ iframe {
 }
 
 footer {
-    display: flex;
     background-color: #417571;
     justify-content: space-around;
     width: 100vw;
+}
+
+ft-container {
+  background-color: #C28280;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+}
+
+ft-item {
+  padding: 20px;
+  margin: 10px;
 }
 
 footer li {
