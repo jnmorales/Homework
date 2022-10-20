@@ -25,7 +25,6 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <div class="container">
     <div class="header">
         <h1>LEAF</h1>
         <div class="topnav">
@@ -42,6 +41,7 @@
             <i style="font-size: 24px" class="fa">&#xf07a;</i>
         </div>
     </div>
+    
     <div class="mainnav">
         <nav>
             <ul>
@@ -55,15 +55,19 @@
         </nav>
     </div>
   </div>
-  <div class="video-container">
-    <iframe
-      frameborder="0" src="https://www.youtube.com/embed/xNN7iTA57jM?controls=0autoplay=1&controls=0&showinfo=0&autohide=1" title="YouTube video player"></iframe>
-  </div>
-  <div class="content">
+  <br></br>
+
+  <section class="opener">
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/xNN7iTA57jM" title="Forest Sounds | Woodland Ambience, Bird Song" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="content">
         <h1>Heading</h1>
         <p>Lorem ipsum...</p>
     </div>
   </div>
+
+
   <div class="flex-container">
     <div class="shop-sample"><h2>Spring</h2><a href="https://www.tamgadesigns.com/products/terra-maxi-dress"><img id="spring" src="https://cdn.shopify.com/s/files/1/1357/9853/products/4Z4A2309_1800x1800.jpg?v=1653074753" width="50%" height="auto"></a></div>
     <div class="shop-sample"><h2>Summer</h2><a href="https://whimsyandrow.com/"><img id="summer" src="https://vegoutmag.com/wp-content/uploads/2022/06/Whimsy-Row.jpg" width="50%" height="auto"></a></div>
@@ -132,8 +136,8 @@
 
 <footer>
     <section class="ft-main">
-        <div>
-            <h3 class="ft-item">LEAF</h3>
+        <div class="ft-container">
+            <div class="ft-item"><h3>LEAF</h3>
                 <p>SUSTAINABLY SOURCED</p>
                 <p>INFO@LEAF.COM</p>
                 <div class="social">
@@ -142,9 +146,8 @@
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-pinterest"></i>
                 </div>
-        </div>
-        <div>
-            <h3 class="ft-item">CUSTOMER CARE</h3>
+            </div>
+            <div class="ft-item"></div><h3>CUSTOMER CARE</h3>
                 <ul>
                     <li><a href=#contact>CONTACT</a></li>
                     <li>SHIPPING AND DELIVERY</li>
@@ -152,23 +155,25 @@
                     <li>AFTERPAY</li>
                     <li>FAQ</li>
                 </ul>
-        </div>
-        <div>
-            <h3 class="ft-item">NEWSLETTER</h3>
+            </div>
+            <div class="ft-item"></div><h3>NEWSLETTER</h3>
                 <div class="container" style="background-color:white">
                     <form method="post" action="http://server1"></form>
                     <input type="text" placeholder="Email address" name="mail" required>
                 </div>
-                <div class="container">
+                <div class="newsletter-container">
                     <input type="submit" value="Subscribe">
                 </div>
                 <p>RECEIVE 10% OFF YOUR FIRST PURCHASE, AS WELL AS UPDATES ON NEW ARRIVALS, EXCLUSIVE PROMOTIONS AND THE LASTEST SUSTAINABLE FASHION NEWS.</p>
-        </div>
+            </div>
+        </div>    
     </section>
-    <div class="ft-legal">
-      <i class="fa-regular fa-copyright"></i>
-      <h4>LEAF 2022</h4>  
-    </div>
+    <section class="ft-legal">
+      <div class="ft-legal">
+        <i class="fa-regular fa-copyright"></i>
+        <h4>LEAF 2022</h4>  
+      </div>
+    </section>
 </footer>
 
 </html>
