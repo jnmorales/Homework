@@ -44,12 +44,27 @@ html {
     padding: 0 20px;
     display: inline-block;
 }
-      
+
+.video-container{
+  width: 100vw;
+  height: 100vh;
+}
+    
 iframe {
-    position: relative;
-    display: flex;
-    width: 100vw;
-    height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+}
+
+  #overlay{
+    position: absolute;
+    color: #FFFFFF;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
 .content {
@@ -134,6 +149,13 @@ footer li {
     }
 }
 
+@media (min-aspect-ratio: 16/9) {
+  .video-container iframe {
+    height: 56.25vw;
+    width: 177.78vh;
+    
+  }
+}
 
 
 /*
