@@ -17,6 +17,11 @@ html {
   line-height: 1.4;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .header {
     text-align: center;
 }
@@ -47,29 +52,52 @@ iframe {
     height: 100vh;
   }
 
-.content {
+.opener {
+  display: grid;
+  grid-template-areas: "opener";
+  place-items: center;
+  place-content: center;
+  overflow: hidden;
+  max-height: clamp(450px, 50vh, 600px);
+}
+
+.overlay {
     position: relative;
     text-align: center;
     background: rgba(0, 0, 0, 0.5);
     color: #754948;
     width: 100vw;
+    grid-area: 1 / 1;
+    place-self: center;
+    z-index: 10;
   }
 
 .collection-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    position: relative;
     background-color: #C29959;
-    width: 100vw;
-    align-items: center;
-    padding: 75px 0;
+    display: grid;
+    max-width: 100vw;
+    position: relative;
+    gap: 20px;
+    grid-template-areas: "spring summer"
+                        "fall winter";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr;
 }
 
-.shop-sample {
-    width: 50%;
-    height: auto;
-    
+.spring {
+  grid-area: spring;
+}
+
+.summer {
+  grid-area: summer;
+}
+
+.fall{
+  grid-area: fall;
+}
+
+.winter{
+  grid-area: winter;
 }
 
 .news-container {
