@@ -55,34 +55,34 @@ iframe {
     width: 100vw;
   }
 
-.flex-container {
+.collection-container {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: relative;
     background-color: #C29959;
     width: 100vw;
+    align-items: center;
+    padding: 75px 0;
 }
 
 .shop-sample {
-    align-content: space-around;
     width: 50%;
     height: auto;
     
 }
 
-.news {
+.news-container {
     display: flex;
     position: relative;
     width: 100vw;
     background-color: #C29959;
-    padding: 20px 0;
+    padding: 75px 0;
 }
 
 .article {
-    padding: 20px 0;
     width: 100vw;
+    padding: 0 20px;
 }
 
 .contact {
@@ -97,18 +97,19 @@ footer {
     background-color: #417571;
     justify-content: space-around;
     width: 100vw;
+    padding: 40px 10px;
 }
 
-ft-container {
-  background-color: #C28280;
-  padding: 20px;
-  margin: 10px;
+.ft-container {
   display: flex;
 }
 
-ft-item {
-  padding: 20px;
-  margin: 10px;
+.ft-item {
+  padding: 0 20px;
+}
+
+.newsletter-container {
+  
 }
 
 footer li {
@@ -116,6 +117,7 @@ footer li {
 }
 
 .ft-legal {
+    display: flex;
     justify-content: center;
     border-top: 1px #777 solid; 
     padding-top: 1.25rem;
