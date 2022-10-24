@@ -45,15 +45,23 @@ iframe {
     z-index: -1;
     width: 100vw;
     height: 100vh;
-  }
+}
 
+#overlay{
+    position: absolute;
+    color: #FFFFFF;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}  
 .content {
     position: relative;
     text-align: center;
     background: rgba(0, 0, 0, 0.5);
     color: #754948;
     width: 100vw;
-  }
+}
 
 .flex-container {
     display: flex;
