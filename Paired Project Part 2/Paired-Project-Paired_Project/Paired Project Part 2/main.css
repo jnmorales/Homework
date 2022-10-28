@@ -1,0 +1,455 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  margin: 0 auto;
+  width: 100vw;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.header {
+    text-align: center;
+    background-color: #cad2c5;
+    width: 100vw;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    color: #2f3e46;
+    padding: 10px 0;
+}
+
+.topnav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+.topnav i {
+  padding-left: 5px;
+}
+
+.mainnav{
+    background-color: #52796f;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.mainnav li {
+    list-style-type: none;
+    font-size: 1em;
+    color: #2f3e46;
+    padding: 0 20px;
+    display: inline-block;
+}
+
+iframe {
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+  }
+
+.opener {
+  display: grid;
+  grid-template: 450px / 0;
+}
+
+.video-container {
+  display: grid;
+  grid-template-areas: "video";
+  background-color: #cad2c5;
+  place-items: center;
+  place-content: center;
+  overflow: hidden;
+  max-height: clamp(450px, 50vh, 600px);
+  width: 100vw;
+}
+
+.about {
+  display: grid;
+  background-color: rgba(202,210,197, 0.5);
+  grid-area: 1 / 2 / 1 / 2;
+  z-index: 5;
+  width: 100vw;
+  text-align: center;
+  font-size: 1.5em;
+  }
+
+.collection-container {
+    background-color: #cad2c5;
+    color: #2f3e46;
+    display: grid;
+    width: 100vw;
+    position: relative;
+    gap: 35px;
+    grid-template-areas: "spring summer"
+                        "fall winter";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.collection-container h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.collection-container img {
+  border: 2px none;
+  border-radius: 5px;
+}
+
+.spring {
+  grid-area: spring;
+}
+
+.summer {
+  grid-area: summer;
+}
+
+.fall{
+  grid-area: fall;
+}
+
+.winter{
+  grid-area: winter;
+}
+
+.news-container {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    background-color: #cad2c5;
+    padding: 75px 0;
+    font-size: 1.2em;
+}
+
+.article {
+    width: 100vw;
+    padding: 0 20px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    padding: 10% 0;
+    background-color: #84a98c;
+    width: 100vw;
+}
+
+.contact-form {
+  border: #2f3e46 solid 10px;
+  border-radius: 15px;
+  padding: 25px 75px;
+  font-weight: bold;
+  font-size: 1.2em;
+  letter-spacing: 1.5px;
+}
+
+footer {
+    background-color: #52796f;
+    justify-content: space-around;
+    width: 100vw;
+    padding: 50px 0px;
+}
+
+.ft-container {
+  display: flex;
+}
+
+.ft-item {
+  padding: 0 20px;
+}
+
+footer li {
+    list-style-type: none;
+    justify-content: left;
+}
+
+.ft-legal {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid; 
+    padding-top: 1.25rem;
+}
+
+@media only screen and (max-width: 500px) {
+    div {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 29.8125rem /*477px*/) {
+    .ft-main {
+        justify-content: space-around;
+    }
+}
+@media only screen and (min-width: 77.5rem /*1240px*/ ) {
+    .ft-main {
+        justify-content: space-evenly;
+    }
+}
+
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
