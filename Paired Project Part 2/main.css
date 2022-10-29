@@ -72,6 +72,13 @@ iframe {
   grid-template: 450px / 0;
 }
 
+.about {
+  align-content: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: justify;
+}
+
 .video-container {
   display: grid;
   grid-template-areas: "video";
